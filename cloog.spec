@@ -1,16 +1,17 @@
 %define		tarball_name %{name}-ppl
 Summary:	The Chunky Loop Generator
 Name:		cloog
-Version:	0.15.9
+Version:	0.15.11
 Release:	1
 License:	GPL v2+
 Group:		Libraries
 URL:		http://www.cloog.org/
 Source0:	ftp://gcc.gnu.org/pub/gcc/infrastructure/%{tarball_name}-%{version}.tar.gz
-# Source0-md5:	806e001d1b1a6b130069ff6274900af5
+# Source0-md5:	060ae4df6fb8176e021b4d033a6c0b9e
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gmp-devel >= 4.1.3
+BuildRequires:	gmp-c++-devel >= 4.1.3
 BuildRequires:	libtool
 BuildRequires:	libtool
 BuildRequires:	ppl-devel >= 0.10
