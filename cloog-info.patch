@@ -1,0 +1,14 @@
+--- cloog-ppl-0.15.11/doc/cloog.texi.orig	2009-05-09 12:57:18.000000000 +0200
++++ cloog-ppl-0.15.11/doc/cloog.texi	2012-05-24 11:17:53.329359671 +0200
+@@ -35,9 +35,9 @@
+ @setfilename cloog.info
+ @settitle CLooG - a loop generator for scanning polyhedra
+ 
+-@dircategory Software libraries
++@dircategory Libraries:
+ @direntry
+-* cloog: (cloog).  A loop generator for scanning polyhedra
++* cloog: (cloog).			A loop generator for scanning polyhedra
+ @end direntry
+ 
+ @set EDITION 2.1

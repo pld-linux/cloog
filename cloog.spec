@@ -8,14 +8,14 @@ License:	GPL v2+
 Group:		Libraries
 Source0:	ftp://gcc.gnu.org/pub/gcc/infrastructure/%{tarball_name}-%{version}.tar.gz
 # Source0-md5:	060ae4df6fb8176e021b4d033a6c0b9e
+Patch0:		%{name}-info.patch
 URL:		http://www.cloog.org/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.13
 BuildRequires:	automake
 BuildRequires:	gmp-devel >= 4.1.3
 BuildRequires:	gmp-c++-devel >= 4.1.3
 BuildRequires:	libtool
 BuildRequires:	ppl-devel >= 0.10
-BuildRequires:	sed >= 4.0
 BuildRequires:	texinfo >= 4.12
 Requires(post):	/sbin/ldconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -75,8 +75,7 @@ Statyczna biblioteka opartej na ppl wersji Chunky Loop Generatora.
 
 %prep
 %setup -q -n %{tarball_name}-%{version}
-
-sed -i -e s/ppl_minor_version=10/ppl_minor_version=11/  configure*
+%patch0 -p1
 
 %build
 %{__libtoolize}
