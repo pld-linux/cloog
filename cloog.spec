@@ -75,7 +75,7 @@ Statyczna biblioteka opartej na ppl wersji Chunky Loop Generatora.
 
 %prep
 %setup -q -n %{tarball_name}-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__libtoolize}
